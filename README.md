@@ -114,8 +114,8 @@ MECS is a simple and unified way to write code and create projects in a way that
 
     | TEMPLATE                                                                            | DESCRIPTION                                                                                      |
     | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-    | [`MECS` npm package](https://github.com/Maysara-Elshewehy/mecs-npm-package)                | A ready `Node.js` project with `TypeScript` for publishing on `npm`                              |
-    | [`MECS` electron app](https://github.com/Maysara-Elshewehy/mecs-electron-app) | A ready `Node.js` project with `JavaScript` and `@je-es` framework to quickly build desktop apps |
+    | [`MECS` npm package](https://github.com/Maysara-Elshewehy/mecs-npm-package)         | A ready `Node.js` project with `TypeScript` for publishing on `npm`                              |
+    | [`MECS` electron app](https://github.com/Maysara-Elshewehy/mecs-electron-app)       | A ready `Node.js` project with `JavaScript` and `@je-es` framework to quickly build desktop apps |
 
 ---
 
