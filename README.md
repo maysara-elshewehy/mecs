@@ -49,27 +49,27 @@ MECS is a simple and unified way to write code and create projects in a way that
        - **PACK** for imports:
 
             ```ts
-            /* ---------------------------------------- PACK ----------------------------------------  */
+            /* ┌─────────────────────────────────────── PACK ───────────────────────────────────────┐  */
 
                 import { someFunction }                 from 'somePackage';
 
-            /* ---------------------------------------- ---- ----------------------------------------  */
+            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
             ```
 
        - **INIT** for constants and initializations:
 
             ```ts
-            /* ---------------------------------------- INIT ----------------------------------------  */
+            /* ┌─────────────────────────────────────── INIT ───────────────────────────────────────┐  */
 
                 const someString    : string            = 'Maysara';
 
-            /* ---------------------------------------- ---- ----------------------------------------  */
+            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
             ```
 
        - **CORE** for the main code of the script:
 
             ```ts
-            /* ---------------------------------------- CORE ----------------------------------------  */
+            /* ┌─────────────────────────────────────── CORE ───────────────────────────────────────┐  */
 
                 /**
                      * ?
@@ -87,13 +87,13 @@ MECS is a simple and unified way to write code and create projects in a way that
                     return 'Hello ' + input;
                 }
 
-            /* ---------------------------------------- ---- ----------------------------------------  */
+            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
             ```
 
        - **HELP** for helper functions:
 
             ```ts
-            /* ---------------------------------------- CORE ----------------------------------------  */
+            /* ┌─────────────────────────────────────── HELP ───────────────────────────────────────┐  */
 
                 const Helpers =
                 {
@@ -104,7 +104,7 @@ MECS is a simple and unified way to write code and create projects in a way that
                     },
                 }
 
-            /* ---------------------------------------- ---- ----------------------------------------  */
+            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
             ```
 
     3. to export something use `export ?` | `export { ? }` | `export * from '?'`
@@ -115,7 +115,6 @@ MECS is a simple and unified way to write code and create projects in a way that
     | TEMPLATE                                                                            | DESCRIPTION                                                                                      |
     | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
     | [`MECS` npm package](https://github.com/Maysara-Elshewehy/mecs-npm-package)         | A ready `Node.js` project with `TypeScript` for publishing on `npm`                              |
-    | [`MECS` electron app](https://github.com/Maysara-Elshewehy/mecs-electron-app)       | A ready `Node.js` project with `JavaScript` and `@je-es` framework to quickly build desktop apps |
 
 ---
 
