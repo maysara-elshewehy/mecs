@@ -1,123 +1,64 @@
-# ╠═ MECS ═╣
+# My Personal Naming Convention 📜
 
-MECS is a simple and unified way to write code and create projects in a way that makes programming more fun and organized. Let's get started . . 🚀
+> **Why❓**
+>
+> I simply work on libraries that contain hundreds of files with thousands of lines and hundreds of functions 😔, and because this has become my way of life, these are the rules I will follow when writing any code from now on **_(Damn the rules of the world that don't suit me 😶)_**.
 
-- ## 📚 Introduction
+- ## Rules
 
-    **MECS** stands for **`M`** methodologies, **`E`** examples, **`C`** coding styles, and **`S`** standards. With **`MECS`**, you can efficiently organize your projects, save time, and maintain a consistent context across all your projects.
+    - #### Sections
 
+        > `padding = 2` _(1 line before content, 1 line after)_, `margin = 3` _(3 lines between sections)_
 
-    | INDEX                   | DESC                         |
-    | ----------------------- | ---------------------------- |
-    | [Project](#project)     | a way to develop a project ! |
-    | [Scripting](#scripting) | a way to scripting !         |
-    | [Templates](#templates) | a way to start anything !    |
+        ```zig
+        // ╔══════════════════════════════════════ NAME ══════════════════════════════════════╗
 
----
+            ...
 
-- ### Project
-
-    1. The `/root` directory should be the main project directory.
-
-    2. `/root` must contain a `src` folder, which houses the actual code and related components.
-
-        > like **Documents** in `/src/docs`, **Unit Tests** in `/src/tests` and **Source code** in `src/code`
-
-        - #### Main file
-            The main script should be located in `/src/code/main.?`.
-
-        - #### Modules
-            Additional modules should be placed in `/src/code/modules/?.?`.
-
-- ### Scripting
-
-    1. Each script must start with an introductory comment, as shown below:
-
-        ```ts
-        /**
-        * @name                                    main.ts                          (*) Required
-        * @description                             the main file (entry point)      (*) Required
-        * @author                                  Maysara Elshewhy                 (!) Optionally
-        * @repo                                    https://github.com/?             (!) Optionally
-        * @package                                 https://npmjs.com/?              (!) Optionally
-        * ..
-        */
+        // ╚══════════════════════════════════════════════════════════════════════════════════╝
         ```
 
-    2. Scripts should be divided into several sections:
+    - #### Sub-Sections
 
-       - **PACK** for imports:
+        > `padding = 2`, `margin = 2`
 
-            ```ts
-            /* ┌─────────────────────────────────────── PACK ───────────────────────────────────────┐  */
+        ```zig
+        // ┌──────────────────────────── NAME ────────────────────────────┐
 
-                import { someFunction }                 from 'somePackage';
+            ...
 
-            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
-            ```
+        // └──────────────────────────────────────────────────────────────┘
+        ```
 
-       - **INIT** for constants and initializations:
+    - #### Structures
 
-            ```ts
-            /* ┌─────────────────────────────────────── INIT ───────────────────────────────────────┐  */
+        ```zig
+        /// Desc.
+        const MyStruct = struct {
+            /// Desc.
+            m_field,
+            /// Desc.
+            m_fieldTwo,
+        };
+        ```
 
-                const someString    : string            = 'Maysara';
+    - #### Functions
 
-            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
-            ```
+        ```zig
+        /// Desc.
+        pub fn functionName(_argument, _argumentTwo) bool {
+            var _Local;
+            var _LocalVariable;
 
-       - **CORE** for the main code of the script:
-
-            ```ts
-            /* ┌─────────────────────────────────────── CORE ───────────────────────────────────────┐  */
-
-                /**
-                     * ?
-                    *
-                    * @param {string} input             - ?
-                    *
-                    *
-                    * @return {string} ?
-                */
-                export const myFunction
-                = (input: string)
-                : string =>
-                {
-                    return Helpers.DoIT(input);
-                    return 'Hello ' + input;
+            if(..) |__res| {
+                if(..) |___resTwo| {
+                    ...
                 }
+            }
 
-            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
-            ```
-
-       - **HELP** for helper functions:
-
-            ```ts
-            /* ┌─────────────────────────────────────── HELP ───────────────────────────────────────┐  */
-
-                const Helpers =
-                {
-                    DoIT: (input: string)
-                    : string =>
-                    {
-                        return 'Hello ' + input;
-                    },
-                }
-
-            /* └────────────────────────────────────────────────────────────────────────────────────┘  */
-            ```
-
-    3. to export something use `export ?` | `export { ? }` | `export * from '?'`
-
-
-- ### Templates
-
-    | TEMPLATE                                                                            | DESCRIPTION                                                                                      |
-    | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-    | [`MECS` npm package](https://github.com/Maysara-Elshewehy/mecs-npm-package)         | A ready `Node.js` project with `TypeScript` for publishing on `npm`                              |
-
+            return false;
+        }
+        ```
 ---
 
-> **MECS** == **M**aysara **E**lshewehy **C**ode **S**tyle !
-
-> **Made with ❤ by [Maysara Elshewehy](https://github.com/Maysara-Elshewehy)**
+> Almost everyone has told me how ugly this style is, well it's like you've never seen anything this beautiful before, so it makes sense that it would be different _(bad)_ for you **But that doesn't mean it's bad for me**.
